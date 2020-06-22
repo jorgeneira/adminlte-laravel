@@ -72,10 +72,6 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (config('adminlte.install_routes', true)) {
-            $this->defineRoutes();
-        }
-
         //Publish
         $this->publishHomeController();
         $this->changeRegisterController();
